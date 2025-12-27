@@ -1,5 +1,5 @@
 /* fichero perimetrocir.c */
-/* Este programa calcula el perímetro de una circunferencia*/
+/* Este programa calcula el perÃ­metro de una circunferencia*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,15 +13,15 @@ int main(void){
     printf( "Introduzca el radio: " );
     valor_leido = scanf( "%lf", &radio );
     if(valor_leido != 1){
-        printf("Error: La entrada debe de ser un número.\n");
+        printf("Error: La entrada debe de ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
     if (radio <= 0.0){
-        printf("Error: El valor del radio debe de ser un número estrictamente positivo (> 0).\n");
+        printf("Error: El valor del radio debe de ser un nÃºmero estrictamente positivo (> 0).\n");
         return EXIT_FAILURE; 
     }
 
     perimetro = 2.0 * PI * radio;
-    printf( "\n El perímetro es: %.4lf\n", perimetro );
+    printf( "\n El perÃ­metro es: %.4lf\n", perimetro );
     return EXIT_SUCCESS;
 }

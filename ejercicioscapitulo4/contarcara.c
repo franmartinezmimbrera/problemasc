@@ -3,17 +3,17 @@
 #include <stdlib.h>
 #include <ctype.h>
 int main(void) {
-    FILE *archivo = NULL;
+    FILE *fichero = NULL;
     int caracter;
     int contador_caracteres = 0;
     int contador_palabras = 0; 
     int dentro_de_palabra = 0; 
-    archivo = fopen("datos.txt", "r");    
-    if (archivo == NULL) {
-        perror("Error al abrir el archivo datos.txt");
+    fichero = fopen("datos.txt", "r");    
+    if (fichero == NULL) {
+        perror("Error al abrir el fichero datos.txt");
         return EXIT_FAILURE; 
     }
-    while ((caracter = fgetc(archivo)) != EOF) {
+    while ((caracter = fgetc(fichero)) != EOF) {
         contador_caracteres++; 
         if (isspace(caracter)) {
             dentro_de_palabra = 0;
@@ -24,8 +24,8 @@ int main(void) {
             }
         }
     }
-    fclose(archivo);
-    printf("Total de caracteres leídos: %d\n", contador_caracteres);
+    fclose(fichero);
+    printf("Total de caracteres leÃ­dos: %d\n", contador_caracteres);
     printf("Total de palabras: %d\n", contador_palabras); 
     return EXIT_SUCCESS;
 }

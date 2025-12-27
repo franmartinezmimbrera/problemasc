@@ -1,5 +1,5 @@
 /* fichero areatriangulo1.c */
-/* Este programa calcula el ¡rea de un tri·ngulo rect·ngulo a partir de la base y la altura */
+/* Este programa calcula el √Årea de un tri√°ngulo rect√°ngulo a partir de la base y la altura */
 #include <stdio.h>
 #include <stdlib.h>
 int main(void) {
@@ -7,22 +7,22 @@ int main(void) {
     double a, b, area;
     int valor_leido;
     
-    printf("Introduce la base del tri·ngulo rect·ngulo: ");
+    printf("Introduce la base del tri√°ngulo rect√°ngulo: ");
     valor_leido = scanf("%lf", &a); 
 
     if (valor_leido != 1 || a <= 0.0) {
-        printf("Error: La base debe ser un n˙mero positivo.\n");
+        printf("Error: La base debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
 
-    printf("Introduce la altura del tri·ngulo rect·ngulo: ");
+    printf("Introduce la altura del tri√°ngulo rect√°ngulo: ");
     valor_leido = scanf("%lf", &b); 
 
     if (valor_leido != 1 || b <= 0.0) {
-        printf("Error: La altura debe ser un n˙mero positivo.\n");
+        printf("Error: La altura debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
     area = (b * a) / 2.0; 
-    printf("El ·rea del tri·ngulo rect·ngulo es: %.2lf\n", area);
+    printf("El √°rea del tri√°ngulo rect√°ngulo es: %.2lf\n", area);
     return EXIT_SUCCESS;
 }

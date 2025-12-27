@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Ejemplo para crear Matriz 2D Din·mica*/
+/* Ejemplo para crear Matriz 2D Din√°mica*/
 
 int main(void) {    
     int M = 3; 
@@ -12,14 +12,14 @@ int main(void) {
     matriz = (int **)malloc(M * sizeof(int *));
 
     if (matriz == NULL) {
-        printf("Error: FallÛ la asignaciÛn de filas.\n");
+        printf("Error: Fall√≥ la asignaci√≥n de filas.\n");
         return EXIT_FAILURE;
     }
 
     for (int i = 0; i < M; i++) {
         matriz[i] = (int *)malloc(N * sizeof(int));
         if (matriz[i] == NULL) {
-            printf("Error: FallÛ la asignaciÛn de columnas en fila %d.\n", i);
+            printf("Error: Fall√≥ la asignaci√≥n de columnas en fila %d.\n", i);
             for (int j = 0; j < i; j++) free(matriz[j]);
             free(matriz);
             return EXIT_FAILURE;
@@ -29,7 +29,7 @@ int main(void) {
         }
     }
 
-    printf("\n Matriz Din·mica %dx%d\n", M, N);
+    printf("\n Matriz Din√°mica %dx%d\n", M, N);
 
     for (int i = 0; i < M; i++) {
         for (int j = 0; j < N; j++) {

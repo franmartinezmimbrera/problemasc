@@ -1,5 +1,5 @@
 /* fichero areatriangulo.c */
-/* Este programa calcula el ·rea de un tri·ngulo a partir de sus lados mediante la fÛrmula de HerÛn */
+/* Este programa calcula el √°rea de un tri√°ngulo a partir de sus lados mediante la f√≥rmula de Her√≥n */
 
 #include <stdio.h>
 #include <math.h>
@@ -9,35 +9,35 @@ int main(void) {
     double l1, l2, l3, area, sp;
     int valor_leido;
     
-    printf("Introduce lo que mide el primer lado del tri·ngulo: ");
+    printf("Introduce lo que mide el primer lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l1);
     if (valor_leido != 1 || l1 <= 0.0) {
-        printf("Error: El primer lado debe ser un n˙mero positivo.\n");
+        printf("Error: El primer lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
 
-    printf("Introduce lo que mide el segundo lado del tri·ngulo: ");
+    printf("Introduce lo que mide el segundo lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l2);
     if (valor_leido != 1 || l2 <= 0.0) {
-        printf("Error: El segundo lado debe ser un n˙mero positivo.\n");
+        printf("Error: El segundo lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
 
-    printf("Introduce lo que mide el tercer lado del tri·ngulo: ");
+    printf("Introduce lo que mide el tercer lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l3);
     if (valor_leido != 1 || l3 <= 0.0) {
-        printf("Error: El tercer lado debe ser un n˙mero positivo.\n");
+        printf("Error: El tercer lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
 
     if (l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {
-        printf("Error: Los lados introducidos no forman un tri·ngulo v·lido (Desigualdad Triangular).\n");
+        printf("Error: Los lados introducidos no forman un tri√°ngulo v√°lido (Desigualdad Triangular).\n");
         return EXIT_FAILURE;
     }
 
     sp = (l1 + l2 + l3) / 2.0;
     area = sqrt(sp * (sp - l1) * (sp - l2) * (sp - l3));
-    printf("El ·rea del tri·ngulo es: %.4lf\n", area);
+    printf("El √°rea del tri√°ngulo es: %.4lf\n", area);
     
     return EXIT_SUCCESS;
 }

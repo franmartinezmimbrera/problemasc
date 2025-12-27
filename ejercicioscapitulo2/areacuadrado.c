@@ -1,5 +1,5 @@
 /* fichero areacuadrado.c */
-/* Se calcula el área de un cuadrado a partir de uno de sus lados */
+/* Se calcula el Ã¡rea de un cuadrado a partir de uno de sus lados */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,6 +15,6 @@ int  main(void) {
         return EXIT_FAILURE;
     }
     area=l1*l1;
-    printf("El área del cuadrado es: %.2lf\n",area);
+    printf("El Ã¡rea del cuadrado es: %.2lf\n",area);
     return EXIT_SUCCESS;
 }

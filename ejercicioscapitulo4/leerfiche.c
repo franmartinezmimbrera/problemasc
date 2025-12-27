@@ -5,24 +5,24 @@
 
 int main(void) {
 
-    FILE *archivo = NULL;
+    FILE *fichero = NULL;
     char linea[100]; 
     
-    /* Abrir el archivo en modo lectura ("r")*/
+    /* Abrir el fichero en modo lectura ("r")*/
 
-    archivo = fopen("datos.txt", "r");
+    fichero = fopen("datos.txt", "r");
 
-    if (archivo == NULL) {
-        perror("Error al abrir el archivo datos.txt");
+    if (fichero == NULL) {
+        perror("Error al abrir el fichero datos.txt");
         return EXIT_FAILURE;
     }
 
     printf("\nContenido de 'datos.txt':\n");
 
-    while (fgets(linea, sizeof(linea), archivo) != NULL) {
+    while (fgets(linea, sizeof(linea), fichero) != NULL) {
         printf("%s", linea);
     }
 
-    fclose(archivo);
+    fclose(fichero);
     return EXIT_SUCCESS;
 }

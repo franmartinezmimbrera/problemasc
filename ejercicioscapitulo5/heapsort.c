@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Función de intercambio (swap)*/
+/* FunciÃ³n de intercambio (swap)*/
 void swap(int* a, int* b) {
     int t = *a;
     *a = *b;
     *b = t;
 }
-/*Función Heapify: restaura la propiedad de Max-Heap en un subárbol
-con raíz en 'i' dentro de un array de tamaño 'n'*/
+/*FunciÃ³n Heapify: restaura la propiedad de Max-Heap en un subÃ¡rbol
+con raÃ­z en 'i' dentro de un array de tamaÃ±o 'n'*/
 void heapify(int arr[], int n, int i) {
   
     int largest = i; 
@@ -27,7 +27,7 @@ void heapify(int arr[], int n, int i) {
         heapify(arr, n, largest);
     }
 }
-/* Función principal de Heapsort */
+/* FunciÃ³n principal de Heapsort */
 void heapSort(int arr[], int n) {
     for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(arr, n, i);

@@ -15,7 +15,7 @@ int main(void) {
         return EXIT_FAILURE;
     }
 
-    printf("Vector Din·mico de %d Elementos\n", N);
+    printf("Vector Din√°mico de %d Elementos\n", N);
     for (int i = 0; i < N; i++) {
         vector[i] = i * 10;
         printf("%d ", vector[i]);

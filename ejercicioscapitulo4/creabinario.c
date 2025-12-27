@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include <string.h> 
 
-/* Definición de la estructura Registro Alumno a guardar*/
+/* DefiniciÃ³n de la estructura Registro Alumno a guardar*/
 typedef struct {
     int id;
     char nombre[50];
     float nota;
 } RegistroAlumno;
 
-const char *NOMBRE_ARCHIVO = "registro.dat"; 
+const char *NOMBRE_FICHERO = "registro.dat"; 
 
 /* Procedimiento que crea un fichero binario con un registro*/
 void crear_binario() {
@@ -20,40 +20,40 @@ void crear_binario() {
         .nombre = "Sofia Perez", 
         .nota = 9.5
     }; 
-    FILE *archivo = NULL;
-    archivo = fopen(NOMBRE_ARCHIVO, "wb"); 
+    FILE *fichero = NULL;
+    fichero = fopen(NOMBRE_FICHERO, "wb"); 
     
-    if (archivo == NULL) {
-        perror("Error al escribir el archivo binario");
+    if (fichero == NULL) {
+        perror("Error al escribir el fichero binario");
         return; 
     }
-    if (fwrite(&alumno_original, sizeof(RegistroAlumno), 1, archivo) != 1) {
-        perror("Error al escribir el registro en el archivo");
+    if (fwrite(&alumno_original, sizeof(RegistroAlumno), 1, fichero) != 1) {
+        perror("Error al escribir el registro en el fichero");
     }
     
-    fclose(archivo);
+    fclose(fichero);
 }
 
 /* Procedimiento que lee de un fichero binario el primer registro*/
 void leer_binario() {
     
     RegistroAlumno alumno_leido = {0};
-    FILE *archivo = NULL;
+    FILE *fichero = NULL;
     
-    archivo = fopen(NOMBRE_ARCHIVO, "rb"); 
+    fichero = fopen(NOMBRE_FICHERO, "rb"); 
     
-    if (archivo == NULL) {
-        perror("Error al leer el archivo binario");
+    if (fichero == NULL) {
+        perror("Error al leer el fichero binario");
         return; 
     }
-    if (fread(&alumno_leido, sizeof(RegistroAlumno), 1, archivo) == 1) {
-        printf("Datos cargados del archivo: ID=%d, Nombre=%s, Nota=%.2f\n", 
+    if (fread(&alumno_leido, sizeof(RegistroAlumno), 1, fichero) == 1) {
+        printf("Datos cargados del fichero: ID=%d, Nombre=%s, Nota=%.2f\n", 
                alumno_leido.id, alumno_leido.nombre, alumno_leido.nota);
     } else {
-        perror("Error al leer el registro del archivo");
+        perror("Error al leer el registro del fichero");
     }
 
-    fclose(archivo);
+    fclose(fichero);
 }
 int main (void){
 

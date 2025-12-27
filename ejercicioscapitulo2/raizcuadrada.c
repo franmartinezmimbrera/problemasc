@@ -1,5 +1,5 @@
 /* fichero raizcuadrada.c */
-/* Este programa calcula la raíz cuadrada de un número*/
+/* Este programa calcula la raÃ­z cuadrada de un nÃºmero*/
 
 #include <stdio.h>
 #include <math.h> 
@@ -10,18 +10,18 @@ int main(void) {
     double numero, resultado;
     int valor_leido;
 
-    printf("Introduce el número a calcular la raíz cuadrada: ");
+    printf("Introduce el nÃºmero a calcular la raÃ­z cuadrada: ");
     valor_leido = scanf("%lf", &numero); 
     if (valor_leido != 1) {
-        printf("Error: La entrada debe ser un número.\n");
+        printf("Error: La entrada debe ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
     if (numero < 0.0) {
-        printf("Error: No se puede calcular la raíz cuadrada n<0.\n");
+        printf("Error: No se puede calcular la raÃ­z cuadrada n<0.\n");
         return EXIT_FAILURE;
     }
 
     resultado = sqrt(numero);
-    printf("La raíz cuadrada de %.4lf es: %.4lf\n", numero, resultado);
+    printf("La raÃ­z cuadrada de %.4lf es: %.4lf\n", numero, resultado);
     return EXIT_SUCCESS;
 }

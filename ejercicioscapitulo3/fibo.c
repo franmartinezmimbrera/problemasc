@@ -1,7 +1,7 @@
 /* fichero fibo.c */
 #include <stdio.h>
 #include <stdlib.h>
-/* Función iterativa para calcular el n-ésimo número de Fibonacci*/
+/* FunciÃ³n iterativa para calcular el n-Ã©simo nÃºmero de Fibonacci*/
 long long fibonacci_iterativo(int n) {
     long long a = 0; 
     long long b = 1; 
@@ -19,7 +19,7 @@ long long fibonacci_iterativo(int n) {
 }
 int main(void) {
     int n = 40; 
-    printf("El %d-ésimo número de Fibonacci (iterativo) es: %lld\n", n, fibonacci_iterativo(n));
+    printf("El %d-Ã©simo nÃºmero de Fibonacci (iterativo) es: %lld\n", n, fibonacci_iterativo(n));
     return EXIT_SUCCESS;
 }
 

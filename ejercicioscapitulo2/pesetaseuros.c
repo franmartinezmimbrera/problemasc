@@ -1,5 +1,5 @@
 /* fichero pesetaseuros.c */
-/* Este programa realiza la conversión de cantidades en pesetas a cantidades en euros*/
+/* Este programa realiza la conversiÃ³n de cantidades en pesetas a cantidades en euros*/
 #include <stdio.h>
 #include <stdlib.h>
 #define TASA_CAMBIO 166.386 
@@ -13,7 +13,7 @@ int main(void) {
     valor_leido = scanf("%lf", &pesetas);
     
     if (valor_leido != 1) {
-        printf("Error: La entrada debe ser un número.\n");
+        printf("Error: La entrada debe ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
     if (pesetas < 0.0) { 

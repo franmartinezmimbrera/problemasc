@@ -1,5 +1,5 @@
 /* fichero pulgadasmilimetros.c */
-/* Este programa cambia pulgadas por milímetros*/
+/* Este programa cambia pulgadas por milÃ­metros*/
 #include <stdio.h>
 #include <stdlib.h>
 #define FACTOR_CONVERSION 25.4 
@@ -13,12 +13,12 @@ int main(void) {
     valor_leido = scanf("%lf", &pul);
     
     if (valor_leido != 1 || pul < 0.0) {
-        printf("Error: La entrada debe ser un número positivo o cero.\n");
+        printf("Error: La entrada debe ser un nÃºmero positivo o cero.\n");
         return EXIT_FAILURE;
     }
 
     mil = FACTOR_CONVERSION * pul;
-    printf("El resultado en milímetros es: %.2lf mm\n", mil);
+    printf("El resultado en milÃ­metros es: %.2lf mm\n", mil);
     
     return EXIT_SUCCESS;
 }

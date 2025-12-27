@@ -1,5 +1,5 @@
 /* fichero ladotriangulo.c */
-/* Este programa calcula el valor del lado a de un triangulo rect·ngulo usando el valor del lado b y la hipotenusa h*/
+/* Este programa calcula el valor del lado a de un triangulo rect√°ngulo usando el valor del lado b y la hipotenusa h*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -7,16 +7,16 @@ int main(void) {
     double a, b, h;
     int valor_leido;
 
-    printf ("Introduzca el valor del lado \"b\" del tri·ngulo rect·ngulo: "); 
+    printf ("Introduzca el valor del lado \"b\" del tri√°ngulo rect√°ngulo: "); 
     valor_leido = scanf ("%lf", &b);
     if (valor_leido != 1 || b <= 0.0) {
-        printf("Error: El lado 'b' debe ser un n˙mero positivo.\n");
+        printf("Error: El lado 'b' debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
-    printf ("Introduzca el valor de la hipotenusa del tri·ngulo rect·ngulo: "); 
+    printf ("Introduzca el valor de la hipotenusa del tri√°ngulo rect√°ngulo: "); 
     valor_leido = scanf ("%lf", &h);
     if (valor_leido != 1 || h <= 0.0) {
-        printf("Error: La hipotenusa debe ser un n˙mero positivo.\n");
+        printf("Error: La hipotenusa debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
     if (b >= h) {
@@ -24,6 +24,6 @@ int main(void) {
         return EXIT_FAILURE;
     }
     a = sqrt((h * h) - (b * b));  
-    printf ("El valor del lado \"a\" del tri·ngulo rect·ngulo es: %.4lf\n", a);
+    printf ("El valor del lado \"a\" del tri√°ngulo rect√°ngulo es: %.4lf\n", a);
     return EXIT_SUCCESS;
 }

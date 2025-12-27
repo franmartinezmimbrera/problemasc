@@ -1,5 +1,5 @@
 /* fichero operacionesaritmeticas.c */
-/* Este programa realiza operaciones aritm閠icas dados 2 n鷐eros*/
+/* Este programa realiza operaciones aritm茅ticas dados 2 n煤meros*/
 #include <stdio.h>
 #include <stdlib.h>
 int main(void) {
@@ -7,22 +7,22 @@ int main(void) {
     printf("Introduce el valor primero: ");
     valor_leido = scanf("%lf", &valor1); 
     if (valor_leido != 1) {
-        printf("Error: El primer valor debe ser un n鷐ero.\n");
+        printf("Error: El primer valor debe ser un n煤mero.\n");
         return EXIT_FAILURE;
     }
     printf("Introduce el valor segundo: ");
     valor_leido = scanf("%lf", &valor2);
     if (valor_leido != 1) {
-        printf("Error: El segundo valor debe ser un n鷐ero.\n");
+        printf("Error: El segundo valor debe ser un n煤mero.\n");
         return EXIT_FAILURE;
     }
     printf("El resultado de la suma de los dos valores es: %.2lf\n", valor1 + valor2);
     printf("El resultado de la resta de los dos valores es: %.2lf\n", valor1 - valor2);
-    printf("El resultado de la multiplicaci髇 de los dos valores es: %.2lf\n", valor1 * valor2);
+    printf("El resultado de la multiplicaci贸n de los dos valores es: %.2lf\n", valor1 * valor2);
     if (valor2 != 0.0) {
-        printf("El resultado de la divisi髇 de los dos valores es: %.2lf\n", valor1 / valor2);
+        printf("El resultado de la divisi贸n de los dos valores es: %.2lf\n", valor1 / valor2);
     } else {
-        printf("El resultado de la divisi髇 de los dos valores es: Error (Divisi髇 por cero).\n");
+        printf("El resultado de la divisi贸n de los dos valores es: Error (Divisi贸n por cero).\n");
     }
     return EXIT_SUCCESS;
 }

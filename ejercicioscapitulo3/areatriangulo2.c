@@ -1,9 +1,9 @@
 /* fichero areatriangulo2.c */
-/* Este programa calcula el ¡rea de un tri·ngulo a  partir de sus lados mediante la fÛrmula de HerÛn*/
+/* Este programa calcula el √Årea de un tri√°ngulo a  partir de sus lados mediante la f√≥rmula de Her√≥n*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-/*FunciÛn de C·lculo ¡rea Triangulo*/
+/*Funci√≥n de C√°lculo √Årea Triangulo*/
 double AreaTrianguloHeron(double l1, double l2, double l3) {
     double area;
     double sp;
@@ -11,35 +11,32 @@ double AreaTrianguloHeron(double l1, double l2, double l3) {
     area = sqrt(sp * (sp - l1) * (sp - l2) * (sp - l3));
     return area;
 }
-
-int main(void) {
-    
+int main(void) {   
     double l1x, l2x, l3x;
     int valor_leido;
-    printf("Introduce lo que mide el primer lado del tri·ngulo: ");
+    printf("Introduce lo que mide el primer lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l1x);
     if (valor_leido != 1 || l1x <= 0.0) {
-        printf("Error: El primer lado debe ser un n˙mero positivo.\n");
+        printf("Error: El primer lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
-    printf("Introduce lo que mide el segundo lado del tri·ngulo: ");
+    printf("Introduce lo que mide el segundo lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l2x);
     if (valor_leido != 1 || l2x <= 0.0) {
-        printf("Error: El segundo lado debe ser un n˙mero positivo.\n");
+        printf("Error: El segundo lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
-    printf("Introduce lo que mide el tercer lado del tri·ngulo: ");
+    printf("Introduce lo que mide el tercer lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l3x);
     if (valor_leido != 1 || l3x <= 0.0) {
-        printf("Error: El tercer lado debe ser un n˙mero positivo.\n");
+        printf("Error: El tercer lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
     if (l1x + l2x <= l3x || l1x + l3x <= l2x || l2x + l3x <= l1x) {
-        printf("Error: Los lados (%.2lf, %.2lf, %.2lf) no forman un tri·ngulo v·lido.\n", l1x, l2x, l3x);
+        printf("Error: Los lados (%.2lf, %.2lf, %.2lf) no forman un tri√°ngulo v√°lido.\n", l1x, l2x, l3x);
         return EXIT_FAILURE;
     }
     double area_calculada = AreaTrianguloHeron(l1x, l2x, l3x);
-    printf("El ·rea del tri·ngulo es: %.4lf\n", area_calculada);
+    printf("El √°rea del tri√°ngulo es: %.4lf\n", area_calculada);
     return EXIT_SUCCESS;
 }
-

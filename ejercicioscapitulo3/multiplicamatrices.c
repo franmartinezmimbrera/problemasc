@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define N 3 
 
-/* Esta función Multiplica dos matrices cuadradas estáticas de números enteros A y B (A * B = C) y la devuelve en C. */
+/* Esta funciÃ³n Multiplica dos matrices cuadradas estÃ¡ticas de nÃºmeros enteros A y B (A * B = C) y la devuelve en C. */
 void multiplicar_matrices_estaticas(int A[N][N], int B[N][N], int C[N][N]) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {

@@ -7,13 +7,13 @@ int main(void) {
     printf("Introduce el valor de a: ");
     valor_leido = scanf("%lf", &a); 
     if (valor_leido != 1) {
-        printf("Error: La entrada para 'a' debe ser un número.\n");
+        printf("Error: La entrada para 'a' debe ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
     printf("Introduce el valor de b: ");
     valor_leido = scanf("%lf", &b);
     if (valor_leido != 1) {
-        printf("Error: La entrada para 'b' debe ser un número.\n");
+        printf("Error: La entrada para 'b' debe ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
     resultado = (a * a) + (b * b) + (2.0 * a * b);    

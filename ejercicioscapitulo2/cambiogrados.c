@@ -1,5 +1,5 @@
 /* fichero cambiogrados.c */
-/* Este programa cambia grados centígrados por fahrenheit*/
+/* Este programa cambia grados centÃ­grados por fahrenheit*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,10 +9,10 @@ int main(void) {
     double c, f;
     int valor_leido;
 
-    printf("Introduzca valor en grados Centígrados: ");
+    printf("Introduzca valor en grados CentÃ­grados: ");
     valor_leido = scanf("%lf", &c);
     if (valor_leido != 1) {
-        printf("Error: La entrada debe ser un número.\n");
+        printf("Error: La entrada debe ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
 

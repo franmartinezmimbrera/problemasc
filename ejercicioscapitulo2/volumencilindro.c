@@ -10,11 +10,11 @@ int main(void) {
     double D, H, R, V;
     int valor_leido;
 
-    printf ("Introduzca el di·metro, en metros: "); 
+    printf ("Introduzca el di√°metro, en metros: "); 
     valor_leido = scanf ("%lf", &D);
     
     if (valor_leido != 1 || D <= 0.0) {
-        printf("Error: El di·metro debe ser un n˙mero positivo.\n");
+        printf("Error: El di√°metro debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
     
@@ -22,13 +22,13 @@ int main(void) {
     valor_leido = scanf ("%lf", &H);
 
     if (valor_leido != 1 || H <= 0.0) {
-        printf("Error: La altura debe ser un n˙mero positivo.\n");
+        printf("Error: La altura debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
     
     R = D / 2.0; 
     V = PI_CONST * R * R * H; 
-    printf ("El volumen del cilindro es de %.4lf metros c˙bicos.\n", V);
+    printf ("El volumen del cilindro es de %.4lf metros c√∫bicos.\n", V);
     
     return EXIT_SUCCESS;
 }

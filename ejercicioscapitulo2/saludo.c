@@ -4,11 +4,11 @@
 #include <stdlib.h>
 int main(void) {
     char nombre[25];
-    printf("¡Hola! ¿Cómo te llamas?\n");
+    printf("Â¡Hola! Â¿CÃ³mo te llamas?\n");
     if(scanf("%24s", nombre)!=1){
        printf("Error: No se pudo leer el nombre correctamente.\n");
     }
-    printf("¿Qué tal estás, %s ?\n", nombre);
+    printf("Â¿QuÃ© tal estÃ¡s, %s ?\n", nombre);
     return EXIT_SUCCESS;
 }
 

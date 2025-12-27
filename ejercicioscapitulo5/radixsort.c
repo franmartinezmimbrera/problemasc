@@ -1,7 +1,7 @@
 /* fichero radixsort.c */
 #include <stdio.h>
 #include <stdlib.h>
-/* FunciÛn auxiliar: obtiene el m·ximo valor del array */
+/* Funci√≥n auxiliar: obtiene el m√°ximo valor del array */
 int getMax(int arr[], int n) {
     int max = arr[0];
     for (int i = 1; i < n; i++)
@@ -27,7 +27,7 @@ void countingSort(int arr[], int n, int exp) {
 
     free(output);
 }
-/* ImplementaciÛn principal del algoritmo Radix Sort */
+/* Implementaci√≥n principal del algoritmo Radix Sort */
 void radixSort(int arr[], int n) {
     int max = getMax(arr, n); 
     for (int exp = 1; max / exp > 0; exp *= 10)

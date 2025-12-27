@@ -1,7 +1,7 @@
 /* fichero shellsort.c */
 #include <stdio.h>
 #include <stdlib.h>
-/* Implementación del algoritmo Shellsort usando la eficiente secuencia de Knuth (3*h + 1).*/
+/* ImplementaciÃ³n del algoritmo Shellsort usando la eficiente secuencia de Knuth (3*h + 1).*/
 void shellsort_knuth(int arr[], int n) {
     int i, j, h, temp;
 

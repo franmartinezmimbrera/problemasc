@@ -1,7 +1,7 @@
 /* fichero binterpola.c */
 #include <stdio.h>
 #include <stdlib.h>
-/*Realiza la Búsqueda por Interpolación en un array ordenado uniformemente distribuido*/
+/*Realiza la BÃºsqueda por InterpolaciÃ³n en un array ordenado uniformemente distribuido*/
 int busqueda_interpolacion(const int arr[], int n, int objetivo) {
     int bajo = 0;           
     int alto = n - 1;       
@@ -42,7 +42,7 @@ int main(void) {
     printf("Conjunto de datos (Ordenado): {10, 20, 30, ..., 100}\n");
     indice = busqueda_interpolacion(datos_ordenados, n, objetivo1);
     if (indice != -1) {
-        printf("Resultado para %d: Encontrado en el índice %d.\n", objetivo1, indice);
+        printf("Resultado para %d: Encontrado en el Ã­ndice %d.\n", objetivo1, indice);
     } else {
         printf("Resultado para %d: No encontrado.\n", objetivo1);
     }

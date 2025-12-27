@@ -14,7 +14,7 @@ int main(void) {
     printf("Introduce el coste del vehiculo: ");
     valor_leido = scanf("%lf", &costecoche);
     if (valor_leido != 1 || costecoche < 0.0) {
-        printf("Error: El coste debe ser un número positivo o cero.\n");
+        printf("Error: El coste debe ser un nÃºmero positivo o cero.\n");
         return EXIT_FAILURE;
     }
 

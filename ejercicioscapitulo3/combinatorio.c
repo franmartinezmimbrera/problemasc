@@ -1,5 +1,5 @@
 /* fichero combinatorio.c */
-/*Calcula el número combinatorio C(n, r) o n sobre r.*/
+/*Calcula el nÃºmero combinatorio C(n, r) o n sobre r.*/
 #include <stdio.h>
 #include <stdlib.h>
 long long factorial(long long n) {
@@ -25,7 +25,7 @@ int main(void) {
     long long M;
     printf("Introduce un numero entero no negativo para N: ");
     if (scanf("%lld", &N) != 1) {
-        printf("Error: Entrada no válida.\n");
+        printf("Error: Entrada no vÃ¡lida.\n");
         return 1;
     }
     if (N < 0) {
@@ -34,7 +34,7 @@ int main(void) {
     }
     printf("Introduce un numero entero no negativo para M: ");
     if (scanf("%lld", &M) != 1) {
-        printf("Error: Entrada no válida.\n");
+        printf("Error: Entrada no vÃ¡lida.\n");
         return EXIT_FAILURE;
     }
     if (M < 0) {
@@ -43,7 +43,7 @@ int main(void) {
     }
     long long combinaciones = nCr(N, M);
     if (combinaciones != -1) {
-        printf("El número combinatorio de %lld sobre %lld es: %lld\n", N, M, combinaciones); 
+        printf("El nÃºmero combinatorio de %lld sobre %lld es: %lld\n", N, M, combinaciones); 
     }
     return EXIT_SUCCESS;
 }

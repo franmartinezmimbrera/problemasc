@@ -6,22 +6,22 @@
 
 int main(void) {
 
-    FILE *archivo = NULL;
+    FILE *fichero = NULL;
     
     /* Abrir el archivo en modo escritura ("w"). */
-    archivo = fopen("datos.txt", "w"); 
+    fichero = fopen("datos.txt", "w"); 
 
-    if (archivo == NULL) {
-        perror("Error al abrir/crear el archivo datos.txt");
+    if (fichero == NULL) {
+        perror("Error al abrir/crear el fichero datos.txt");
         return EXIT_FAILURE;
     }
 
-    fprintf(archivo, "Esta es la primera línea.\n");
+    fprintf(fichero, "Esta es la primera lÃ­nea.\n");
 
-    fprintf(archivo, "El número PI es aproximadamente %.4f\n", 3.14159);
+    fprintf(fichero, "El nÃºmero PI es aproximadamente %.4f\n", 3.14159);
 
-    fprintf(archivo, "Tercera línea de ejemplo.\n");
+    fprintf(fichero, "Tercera lÃ­nea de ejemplo.\n");
 
-    fclose(archivo);
+    fclose(fichero);
     return EXIT_SUCCESS;
 }

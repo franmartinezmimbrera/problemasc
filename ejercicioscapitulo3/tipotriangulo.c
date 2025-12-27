@@ -1,51 +1,34 @@
 /* fichero tipotriangulo.c */
-/* Este programa calcula el tipo de tri·ngulo en funciÛn de los lados*/
-
+/* Este programa calcula el tipo de tri√°ngulo en funci√≥n de los lados*/
 #include <stdio.h>
 #include <stdlib.h>
 int main(void) {
-    
-    double l1, l2, l3;
-    int valor_leido;
-    
-    printf("Introduce lo que mide el primer lado del tri·ngulo: ");
+    double l1, l2, l3; int valor_leido;
+    printf("Introduce lo que mide el primer lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l1);
-
     if (valor_leido != 1 || l1 <= 0.0) {
-        printf("Error: El lado debe ser un n˙mero positivo.\n");
+        printf("Error: El lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
-
-    printf("Introduce lo que mide el segundo lado del tri·ngulo: ");
+    printf("Introduce lo que mide el segundo lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l2);
-
     if (valor_leido != 1 || l2 <= 0.0) {
-        printf("Error: El lado debe ser un n˙mero positivo.\n");
+        printf("Error: El lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
-
-    printf("Introduce lo que mide el tercer lado del tri·ngulo: ");
+    printf("Introduce lo que mide el tercer lado del tri√°ngulo: ");
     valor_leido = scanf("%lf", &l3);
-
     if (valor_leido != 1 || l3 <= 0.0) {
-        printf("Error: El lado debe ser un n˙mero positivo.\n");
+        printf("Error: El lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
-
     if (l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {
-        printf("\nError GeomÈtrico: Los lados NO forman un tri·ngulo v·lido.\n");
+     printf("\nError Geom√©trico: Los lados NO forman un tri√°ngulo v√°lido.\n");
         return EXIT_FAILURE;
     }
-
-    if (l1 == l2 && l2 == l3) {
-        printf("\nEl Tri·ngulo es EQUIL¡TERO (Tres lados iguales).\n");
-    }
-    else if (l1 == l2 || l1 == l3 || l3 == l2) {
-        printf("\nEl Tri·ngulo es IS”SCELES (Dos lados iguales).\n");
-    }
+    if (l1 == l2 && l2 == l3) {printf("\nEl Tri√°ngulo es EQUIL√ÅTERO (Tres lados iguales).\n");}
+    else if (l1 == l2 || l1 == l3 || l3 == l2) {printf("\nEl Tri√°ngulo es IS√ìSCELES (Dos lados iguales).\n");}
     else {
-        printf("\nEl Tri·ngulo es ESCALENO (Ning˙n lado igual).\n");
-    }
-
+        printf("\nEl Tri√°ngulo es ESCALENO (Ning√∫n lado igual).\n"); }
     return EXIT_SUCCESS;
 }

@@ -28,14 +28,14 @@ void binomio_de_newton(int a, int b, int n) {
         return;
     }
 
-    printf("Expansión de (%d + %d)^%d:\n", a, b, n);
+    printf("ExpansiÃ³n de (%d + %d)^%d:\n", a, b, n);
     long double suma_total = 0.0L; 
     
     for (int k = 0; k <= n; k++) {
         long long coeficiente = nCr(n, k);
         
         if (coeficiente == -1) {
-            printf("Cálculo detenido: N (%d) es > 20 y desborda el factorial.\n", n);
+            printf("CÃ¡lculo detenido: N (%d) es > 20 y desborda el factorial.\n", n);
             return; 
         }
 
@@ -51,7 +51,7 @@ void binomio_de_newton(int a, int b, int n) {
                (unsigned long long)roundl(valor_termino_ld));
     }
     
-    printf("Valor Total (calculado por suma de términos) = %llu\n", (unsigned long long)roundl(suma_total));
+    printf("Valor Total (calculado por suma de tÃ©rminos) = %llu\n", (unsigned long long)roundl(suma_total));
     
 }
 
@@ -60,13 +60,13 @@ int main(void) {
 
     printf("Introduce un numero entero para a: ");
     if (scanf("%d", &a) != 1) { 
-        printf ("Número no válido.\n");    
+        printf ("NÃºmero no vÃ¡lido.\n");    
         return EXIT_FAILURE; 
     }
     
     printf("Introduce un numero entero para b: ");
     if (scanf("%d", &b) != 1) { 
-        printf ("Número no válido.\n");   
+        printf ("NÃºmero no vÃ¡lido.\n");   
         return EXIT_FAILURE; 
     }
     if (a>20 || b>20){
@@ -75,7 +75,7 @@ int main(void) {
     } 
     printf("Introduce un numero entero no negativo para n (MAX 12): ");
     if (scanf("%d", &n) != 1) { 
-        printf("Error: N debe ser un número.\n");
+        printf("Error: N debe ser un nÃºmero.\n");
         return EXIT_FAILURE;
     }
     if (n>12){

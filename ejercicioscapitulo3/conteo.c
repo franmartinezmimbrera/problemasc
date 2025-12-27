@@ -28,7 +28,7 @@ int contar_vocales(const char s[]) {
 }
 int main(void) {
     char lista_frases[NUM_FRASES][MAX_LONGITUD];int total_vocales = 0;
-    printf("Introduce %d frases/líneas de texto:\n", NUM_FRASES);
+    printf("Introduce %d frases/lÃ­neas de texto:\n", NUM_FRASES);
     for (int i = 0; i < NUM_FRASES; i++) {
         printf("Frase %d: ", i + 1);
         if (fgets(lista_frases[i], MAX_LONGITUD, stdin) == NULL) {break;}
@@ -38,9 +38,9 @@ int main(void) {
         convertir_a_mayusculas(frase);
         vocales_frase = contar_vocales(frase);
         total_vocales += vocales_frase;
-        printf("Frase %d (MAYÚS): '%s' -> Vocales contadas: %d\n", 
+        printf("Frase %d (MAYÃšS): '%s' -> Vocales contadas: %d\n", 
                i + 1, frase, vocales_frase);
     }
-    printf("El número total de vocales en todas las frases es: %d\n", total_vocales);
+    printf("El nÃºmero total de vocales en todas las frases es: %d\n", total_vocales);
     return EXIT_SUCCESS;
 }

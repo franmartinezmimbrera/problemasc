@@ -19,7 +19,7 @@ int main(void) {
         if (len == 0) {break;}
         printf ("La cadena contiene %zu caracteres. \n", len); 
         strcpy(cadena_resultado, cadena);
-        printf ("Concatenación: %s \n", strcat(cadena_resultado, ".txt"));
+        printf ("ConcatenaciÃ³n: %s \n", strcat(cadena_resultado, ".txt"));
         printf("Introduzca cadena (o solo Enter para terminar): \n");
     }
     return EXIT_SUCCESS;

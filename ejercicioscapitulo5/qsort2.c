@@ -1,7 +1,7 @@
 /* fichero qsort.c */
 #include <stdio.h>
 #include <stdlib.h>
-/* Función de comparación requerida por qsort para entero int */
+/* FunciÃ³n de comparaciÃ³n requerida por qsort para entero int */
 int comparar(const void *a, const void *b) {
     int val_a = *(const int *)a;
     int val_b = *(const int long *)b;
@@ -18,7 +18,7 @@ int main(void) {
         printf("%d ", numeros[i]); 
     printf("\n");
     qsort(numeros, n, sizeof(int), comparar);               
-    printf("Vector después de qsort: ");
+    printf("Vector despuÃ©s de qsort: ");
     for (int i = 0; i < n; i++) 
         printf("%d ", numeros[i]);
     printf("\n");

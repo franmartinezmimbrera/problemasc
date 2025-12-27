@@ -1,5 +1,5 @@
 /* fichero sumanumerosnaturales.c */
-/* Este programa calcula la suma de los n primeros números naturales con for*/
+/* Este programa calcula la suma de los n primeros nÃºmeros naturales con for*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,14 +10,14 @@ int main(void) {
     long long numero_n; 
     int valor_leido; 
 
-    printf("Introduzca número de números naturales a sumar (n): ");
+    printf("Introduzca nÃºmero de nÃºmeros naturales a sumar (n): ");
     valor_leido = scanf("%lld", &numero_n);
     if (valor_leido != 1) {
-        printf("Error: La entrada no es un número entero válido.\n");
+        printf("Error: La entrada no es un nÃºmero entero vÃ¡lido.\n");
         return EXIT_FAILURE;
     }
     if (numero_n < 0) {
-        printf("Error: El número de naturales debe ser cero o positivo.\n");
+        printf("Error: El nÃºmero de naturales debe ser cero o positivo.\n");
         return EXIT_FAILURE;
     }
 
@@ -25,7 +25,7 @@ int main(void) {
         suma = suma + i;
     }
 
-    printf( "La suma de los %lld primeros números naturales es: %lld \n", numero_n, suma );
+    printf( "La suma de los %lld primeros nÃºmeros naturales es: %lld \n", numero_n, suma );
 
     return EXIT_SUCCESS;
 }

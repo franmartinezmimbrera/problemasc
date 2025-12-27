@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define R_FILAS 3
 #define C_COLUMNAS 4
-/* Función para trasponer una matriz*/
+/* FunciÃ³n para trasponer una matriz*/
 void trasponer_matriz(int filas_orig, int cols_orig,int original[filas_orig][cols_orig], int transpuesta[cols_orig][filas_orig]) {
     for (int i = 0; i < filas_orig; i++) {
         for (int j = 0; j < cols_orig; j++) {

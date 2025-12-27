@@ -1,5 +1,5 @@
 /* fichero MCD.c */
-/* Este programa calcula el MCD dados 2 números*/
+/* Este programa calcula el MCD dados 2 nÃºmeros*/
 #include <stdio.h>
 #include <stdlib.h>
 int main(void) {
@@ -10,13 +10,13 @@ int main(void) {
     printf("Introduzca valor de a (entero no negativo): ");
     valor_leido = scanf("%lld", &a);
     if (valor_leido != 1 || a < 0) {
-        printf("Error: El valor de 'a' debe ser un número entero no negativo\n");
+        printf("Error: El valor de 'a' debe ser un nÃºmero entero no negativo\n");
         return EXIT_FAILURE;
     }
     printf("Introduzca valor de b (entero no negativo): ");
     valor_leido = scanf("%lld", &b);
     if (valor_leido != 1 || b < 0) {
-        printf("Error: El valor de 'b' debe ser un número entero no negativo\n");
+        printf("Error: El valor de 'b' debe ser un nÃºmero entero no negativo\n");
         return EXIT_FAILURE;
     }
     a_calc = a; b_calc = b;

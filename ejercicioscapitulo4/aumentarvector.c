@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Ejemplo para aumentar un vector en tiempo de ejecución*/
+/* Ejemplo para aumentar un vector en tiempo de ejecuciÃ³n*/
 
 int main(void) {
     
@@ -24,7 +24,7 @@ int main(void) {
     int *temp = (int *)realloc(vector, N_nuevo * sizeof(int));
 
     if (temp == NULL) {
-        printf("Error: Falló realloc, los datos originales siguen en 'vector'.\n");
+        printf("Error: FallÃ³ realloc, los datos originales siguen en 'vector'.\n");
         free(vector);
         return EXIT_FAILURE;
     }

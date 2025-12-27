@@ -24,7 +24,7 @@ int main(void) {
     }
     color[strcspn(color, "\n")] = '\0';
     printf("El %s !!! \n", color);
-    printf("¡Cómo puede gustarte el %s,\n ", color); 
-    printf("con %d años y pesando %6.2f Kg.?\n", edad, peso); 
+    printf("Â¡CÃ³mo puede gustarte el %s,\n ", color); 
+    printf("con %d aÃ±os y pesando %6.2f Kg.?\n", edad, peso); 
     return EXIT_SUCCESS;
 }

@@ -1,7 +1,7 @@
 /* fichero burbuja.c */
 #include <stdio.h>
 #include <stdlib.h>
-/*Función que implementa el algoritmo de ordenación de burbuja*/
+/*FunciÃ³n que implementa el algoritmo de ordenaciÃ³n de burbuja*/
 void ordenar_burbuja(int arr[], int n) {
     int i, j;int temp; 
     for (i = 0; i < n - 1; i++) {

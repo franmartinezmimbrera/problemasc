@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
-/* Función auxiliar para combinar (merge) dos sub-arrays ordenados*/
+/* FunciÃ³n auxiliar para combinar (merge) dos sub-arrays ordenados*/
 void merge(int arr[], int inicio, int medio, int fin) {
     int i, j, k;
     int n1 = medio - inicio + 1; 
@@ -38,7 +38,7 @@ void merge(int arr[], int inicio, int medio, int fin) {
     }
     free(temp_arr);
 }
-/* Función Mergesoft*/
+/* FunciÃ³n Mergesoft*/
 void mergeSort(int arr[], int inicio, int fin) {
     if (inicio < fin) {
         int medio = inicio + (fin - inicio) / 2;

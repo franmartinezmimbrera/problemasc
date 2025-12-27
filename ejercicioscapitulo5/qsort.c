@@ -1,13 +1,13 @@
 /* fichero qsort.c */
 #include <stdio.h>
 #include <stdlib.h> 
-/* Funci髇 de Intercambio (Swap) para enteros */
+/* Funci贸n de Intercambio (Swap) para enteros */
 void swap(int* a, int* b) {
     int t = *a;
     *a = *b;
     *b = t;
 }
-/* Funci髇 de Partici髇 para enteros */
+/* Funci贸n de Partici贸n para enteros */
 int particion(int arr[], int bajo, int alto) {
     int pivote = arr[alto]; 
     int i = (bajo - 1); 
@@ -20,7 +20,7 @@ int particion(int arr[], int bajo, int alto) {
     swap(&arr[i + 1], &arr[alto]);
     return (i + 1);
 }
-/* Funci髇 Quicksort (Recursiva) para enteros */
+/* Funci贸n Quicksort (Recursiva) para enteros */
 void quicksort(int arr[], int bajo, int alto) {
     if (bajo < alto) {
         int pi = particion(arr, bajo, alto);

@@ -1,5 +1,5 @@
 /* fichero areatriangulo2.c */
-/* Este programa calcula el ¡rea de un tri·ngulo equil·tero a partir de uno de sus lados*/
+/* Este programa calcula el √Årea de un tri√°ngulo equil√°tero a partir de uno de sus lados*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -8,20 +8,20 @@ int main(void) {
     double l, area;
     int valor_leido;
     
-    printf("Introduce un lado del tri·ngulo equil·tero: ");
+    printf("Introduce un lado del tri√°ngulo equil√°tero: ");
 
     valor_leido = scanf("%lf", &l); 
     
     if (valor_leido != 1) {
-        printf("Error: La entrada debe ser un n˙mero.\n");
+        printf("Error: La entrada debe ser un n√∫mero.\n");
         return EXIT_FAILURE;
     }
     if (l <= 0.0) {
-        printf("Error: El lado debe ser un n˙mero positivo.\n");
+        printf("Error: El lado debe ser un n√∫mero positivo.\n");
         return EXIT_FAILURE;
     }
     area = (sqrt(3.0) / 4.0) * l * l;
-    printf("El ·rea del tri·ngulo equil·tero de lado %.4lf es: %.4lf\n", l, area);
+    printf("El √°rea del tri√°ngulo equil√°tero de lado %.4lf es: %.4lf\n", l, area);
     
     return EXIT_SUCCESS;
 }

@@ -1,8 +1,8 @@
 /* fichero MCD1.c */
-/* Este programa calcula el MCD dados 2 números mediante una función*/
+/* Este programa calcula el MCD dados 2 nÃºmeros mediante una funciÃ³n*/
 #include <stdio.h>
 #include <stdlib.h>
-// La función MCD calcula el Máximo Común Divisor usando el Algoritmo de Euclides.
+// La funciÃ³n MCD calcula el MÃ¡ximo ComÃºn Divisor usando el Algoritmo de Euclides.
 long long MCD(long long a, long long b) {
 
     long long temporal;
@@ -25,7 +25,7 @@ int main(void) {
     valor_leido = scanf("%lld", &ax);
 
     if (valor_leido != 1 || ax < 0) {
-        printf("Error: El valor de 'a' debe ser un número entero no negativo\n");
+        printf("Error: El valor de 'a' debe ser un nÃºmero entero no negativo\n");
         return EXIT_FAILURE;
     }
 
@@ -33,7 +33,7 @@ int main(void) {
     valor_leido = scanf("%lld", &bx);
 
     if (valor_leido != 1 || bx < 0) {
-        printf("Error: El valor de 'b' debe ser un número entero no negativo\n");
+        printf("Error: El valor de 'b' debe ser un nÃºmero entero no negativo\n");
         return EXIT_FAILURE;
     }
 
